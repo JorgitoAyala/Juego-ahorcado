@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--CSS STYLES-->
+  <link rel="stylesheet" href="styles.css">
+
+  <!--TAILWIND CSS-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Ahorcado 😵</title>
+</head>
+
+<body class="h-screen flex items-center justify-center bg-green-400">
+  <div class="p-10 bg-white border border-2 border-black rounded-xl">
+    <h1 class="font-bold text-4xl text-center">Juego del ahorcado 😵</h1>
+
+    <!--RESULTADO FINAL-->
+    <div class="hidden mt-5 px-4 py-2 bg-green-300 text-center text-lg rounded-xl" id="palabrafinal"></div>
+
+    <!--AHORCADO-->
+    <div class="mt-5 flex items-center justify-center">
+      <img class="w-[300px] h-[300px] rounded-xl" id="imagen" alt="ahorcado">
+      <img class="absolute hidden w-[300px] h-[300px] rounded-xl" id="imagen-final" alt="imagen-final">
+    </div>
+
+    <!--PALABRA PARA COMPLETAR-->
+    <div class="mt-5 flex items-center justify-center">
+      <div class="correctas"></div>
+    </div>
+
+    <!--KEYBOARD-->
+    <div class="mt-5 flex flex-col items-center">
+      <!--Estas clases se insertan dinámicamente-->
+      <div class="fila1"></div>
+      <div class="fila2"></div>
+      <div class="fila3"></div>
+    </div>
+
+    <!--REINICIAR JUEGO-->
+    <button
+      class="hidden mt-5 w-full px-4 py-2 bg-green-500 font-bold text-lg text-white transition duration-300 hover:scale-105 rounded-lg"
+      id="nuevobtn">
+      REINICIAR JUEGO
+    </button>
+  </div>
+
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
